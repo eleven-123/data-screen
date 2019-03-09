@@ -1,0 +1,36 @@
+
+html, body, #root {
+  height: 100%;
+}
+*{
+  margin:0;
+  padding:0;
+}
+body {
+  margin: 0;
+  background: rgb(9, 21, 61);
+}
+
+
+/* carousel*/
+.ant-carousel .slick-list{
+    height:272px !important;
+}
+.ant-carousel .exceptionDevice .slick-list{
+  height:256px !important;
+}
+
+/*定义一个动画*/
+@keyframes rowup {
+  0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+  }
+  100% {
+      transform: translate3d(0, -276px, 0);
+      -webkit-transform: translate3d(0, -276px, 0);
+      -moz-transform: translate3d(0, -276px, 0);
+      -ms-transform: translate3d(0, -276px, 0);
+      -o-transform: translate3d(0, -276px, 0);
+}
+}

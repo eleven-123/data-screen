@@ -1,0 +1,232 @@
+
+.container{
+    background:#09153d;
+}
+
+.section{
+    margin-bottom:30px;
+    padding-bottom: 10px;
+}
+@media (min-width: 992px){
+    .row{margin-right:0 !important;}
+    .left{
+        width: 25.22%;
+        padding-right:29px !important;
+    }
+    .middle{
+        width: 53.36%;
+        padding:60px 30px 0 2px !important;
+    }
+    .right{
+        width: 21.42%;
+        padding:0 !important;
+    }
+}
+
+
+.lSection{    
+    background: url(../assets/lSection_bg.png) no-repeat top left;
+    background-size: 100% 100%;
+}
+.rSection{
+    background: url(../assets/rSection_bg.png) no-repeat top left;
+    background-size: 100% 100%;
+}
+
+.title{
+    padding:0 30px;
+    margin:0;
+    font-size: 16px;
+    color: #F8BB38;
+    text-align: left;
+}
+
+.listTop{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #32A3FE;
+    margin-bottom: 12px;
+    line-height: 1;
+    margin:8px 20px;
+}
+.listTop dt:first-child{
+    flex:0 0 65%;
+    padding-right: 30px;
+}
+.listTop dt:last-child{
+    flex:0 0 35%;
+}
+
+
+.total{
+    color: #bedef9;
+}
+
+.cellCont{
+    padding:30px 30px 0;
+    position: relative;
+}
+.cellCont.first::after{
+    content:'';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 1px;
+    height: 88px;
+    margin-top: -44px;
+    background:rgba(50,163,254,0.3)
+}
+.topCont{
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.topCont h5,.topCont p{
+    margin:0;
+    font-size:16px;
+    color:rgba(50,163,254,1);
+    line-height: 1;
+}
+.number{
+    margin:0;
+    padding:28px 0;
+    font-size:26px;
+    color: #5BB491;
+}
+.number b{
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+.yFontColor{
+    color: #F8BB38;
+}
+.mapCont{
+    padding:22px 30px;
+    position: relative;
+}
+.fixedTitle{
+    position: absolute;
+    top: 52px;
+    left:42px
+}
+.fixedTitle h5{
+    margin-bottom:12px;
+    font-size: 16px;
+    color: #32A3FE;
+}
+.fixedTitle p{
+    margin:0;
+    font-size:30px;
+    font-weight: 600;
+    color: #E56B18;
+    line-height: 1;
+}
+
+.barCont{padding:0 10px 0 25px;}
+
+/* 客单价 */
+.border{
+    position: relative;
+    border:1px solid #1A348B;    
+}
+.border .bg{
+    position: absolute;
+    width:15px;
+    height:15px;
+}
+.border .bgLeftTop{
+    left:-1px;
+    top: -1px;
+}
+.border .bgRightTop{
+    right:-1px;
+    top: -1px;    
+}
+.border .bgLeftBottom{
+    left:-1px;
+    bottom: -1px;
+}
+.border .bgRightBottom{
+    right:-1px;
+    bottom:-1px;
+}
+.border .bg::before,.border .bg::after{
+    content:'';
+    position: absolute;
+    background:rgba(29,58,153,1);    
+}
+.border .bgLeftTop::before,.border .bgLeftBottom::before,
+.border .bgRightTop::after,.border .bgRightBottom::after{width:3px;height: 15px;}
+.border .bgLeftTop::before,.border .bgLeftBottom::before{left:-1px;}
+.border .bgRightTop::after,.border .bgRightBottom::after{right: -1px;}
+.border .bgLeftTop::after,.border .bgLeftBottom::after,
+.border .bgRightTop::before,.border .bgRightBottom::before{width:15px;height: 3px;}
+.border .bgLeftTop::after,.border .bgRightTop::before{top:-1px;}
+.border .bgLeftBottom::after,.border .bgRightBottom::before{bottom: -1px;}
+.border .bgLeftTop::after,.border .bgLeftBottom::after{left:-1px;}
+.border .bgRightTop::before,.border .bgRightBottom::before{right:-1px;}
+
+
+.itemBox{
+    padding: 42px 0;
+    text-align: center;
+}
+.itemBox h4{
+    font-size:32px;
+    font-family:MicrosoftYaHei;
+    font-weight:400;
+    color:rgba(91,180,145,1);
+    line-height:1.2;
+    margin-bottom:6px;
+}
+.itemBox p{
+    font-size:14px;
+    color:rgba(152,194,243,1);
+    line-height:1.1;
+    margin:0;
+}
+
+.payment{
+    margin:0;
+    padding:18px;
+}
+.payment .title{
+    padding:0;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+.rowFlex{
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 0;
+}
+.rowFlex .col{
+    flex:1;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color:#98C2F3;
+    line-height: 1;
+    margin-top: 5px;
+}
+.rowFlex .col .icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    background: url(../assets/icon_zhifubao.png) no-repeat center;
+    background-size: cover;
+}
+.rowFlex .col .weixin{
+    background: url(../assets/icon_weixin.png) no-repeat center;
+    background-size: cover;
+}
+
