@@ -6,9 +6,9 @@
 
 安装依赖：
 <pre>
-	<code>yarn</code>
+ <code>yarn</code>
 </pre>
 运行：
 <pre>
-	<code>yarn start</code>
+ <code>yarn start</code>
 </pre>
